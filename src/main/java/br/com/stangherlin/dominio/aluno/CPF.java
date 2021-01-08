@@ -1,12 +1,16 @@
-package escola;
+package br.com.stangherlin.dominio.aluno;
 
 public class CPF {
 
-    private String cpf;
+    private String numero;
 
-    public CPF(String cpf) {
-        if (isCpfValido(cpf))
+    public CPF(String numero) {
+        if (isCpfValido(numero))
             throw new IllegalArgumentException("CPF inválido");
+    }
+
+    public String getNumero() {
+        return numero;
     }
 
     private boolean isCpfValido(String cpf){

@@ -1,4 +1,4 @@
-package escola;
+package br.com.stangherlin.dominio.aluno;
 
 public class Email {
 
@@ -9,6 +9,10 @@ public class Email {
             throw new IllegalArgumentException("Email inválido");
 
         this.endereco = endereco;
+    }
+
+    public String getEndereco() {
+        return endereco;
     }
 
     private boolean isEmailValido(String endereco) {
