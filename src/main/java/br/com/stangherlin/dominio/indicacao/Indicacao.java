@@ -1,4 +1,4 @@
-package br.com.stangherlin.dominio.escola;
+package br.com.stangherlin.dominio.indicacao;
 
 import br.com.stangherlin.dominio.aluno.Aluno;
 
