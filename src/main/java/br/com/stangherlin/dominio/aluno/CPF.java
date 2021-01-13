@@ -7,6 +7,8 @@ public class CPF {
     public CPF(String numero) {
         if (isCpfValido(numero))
             throw new IllegalArgumentException("CPF inválido");
+
+        this.numero = numero;
     }
 
     public String getNumero() {
