@@ -15,9 +15,13 @@ public class CPF {
         return numero;
     }
 
-    private boolean isCpfValido(String cpf){
+    private boolean isCpfValido(String cpf) {
         return cpf != null &&
                 cpf.matches("/^\\d{3}\\.\\d{3}\\.\\d{3}\\-\\d{2}$/");
     }
 
+    @Override
+    public String toString() {
+        return numero;
+    }
 }
